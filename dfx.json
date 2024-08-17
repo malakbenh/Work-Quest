@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "work-quest-backend": {
+      "candid": "src/work-quest-backend/work-quest-backend.did",
+      "package": "work-quest-backend",
+      "type": "rust"
+    },
+    "work-quest-frontend": {
+      "dependencies": [
+        "work-quest-backend"
+      ],
+      "source": [
+        "src/work-quest-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "work-quest-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/work-quest-backend"
+]
+resolver = "2"
